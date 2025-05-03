@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Republic of Web Access</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+      color: #00fff7;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: #0f0f0f;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 0 20px #00fff7;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #00fff7;
+      text-shadow: 0 0 10px #00fff7;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7;
+      }
+      to {
+        text-shadow: 0 0 20px #00fff7, 0 0 40px #0ff;
+      }
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .section-heading {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #00e0ff;
+      border-bottom: 2px solid #00e0ff;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+      animation: border-glow 2s infinite alternate;
+    }
+
+    @keyframes border-glow {
+      from {
+        border-color: #00e0ff;
+      }
+      to {
+        border-color: #00ffff;
+      }
+    }
+
+    .intro-text {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      color: #a8f9ff;
+      font-size: 1.1rem;
+    }
+
+    .service {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 2rem;
+      border-radius: 12px;
+      border: 1px solid #00ffff33;
+      box-shadow: 0 0 20px #00ffff33;
+      margin-bottom: 2rem;
+    }
+
+    .service h2 {
+      font-size: 1.6rem;
+      color: #00ffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .service p {
+      color: #c8f6ff;
+    }
+
+    .service-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background-color: #00ffff;
+      color: #0f0f0f;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 15px #00ffffaa;
+    }
+
+    .service-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #00ffff;
+    }
+
+    .team {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 12px #00fff722;
+    }
+
+    .team h2 {
+      font-size: 2rem;
+      text-align: center;
+      color: #00e6ff;
+      margin-bottom: 1.5rem;
+    }
+
+    .team ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .team-member {
+      margin-bottom: 1.2rem;
+    }
+
+    .team-member h3 {
+      font-size: 1.2rem;
+      color: #00d0ff;
+    }
+
+    .team-member p {
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    footer {
+      background-color: #0d0d0d;
+      color: #00e6ff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+      box-shadow: 0 -2px 10px #00fff722;
+    }
+
+    footer a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .section-heading, .team h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>REPUBLIC OF WEB ACCESS <span>(ROWA)</span></h1>
+  </header>
+
+  <main>
+    <section aria-label="Web Services">
+      <div class="section-heading">Our Web Services</div>
+      <p class="intro-text">
+        We provide 100% free public services. Our mission is to offer powerful and accessible tools for everyone—maintained with care by a single developer.
+      </p>
+      <article class="service">
+        <h2>Service: Certificate.io</h2>
+        <p>Take an MCQ-based test and instantly receive your certificate. It's fast, easy, and free!</p>
+        <a href="#" class="service-btn">Visit Service</a>
+      </article>
+    </section>
+
+    <section class="team" aria-label="Team Information">
+      <h2>Our Team</h2>
+      <ul>
+        <li class="team-member"><h3>Developer</h3><p>Muneeb</p></li>
+        <li class="team-member"><h3>Software Engineer</h3><p>Muneeb</p></li>
+        <li class="team-member"><h3>Designer</h3><p>Muneeb</p></li>
+        <li class="team-member"><h3>QA</h3><p>Muneeb</p></li>
+        <li class="team-member"><h3>CEO</h3><p>Muneeb</p></li>
+        <li class="team-member"><h3>HR</h3><p>Muneeb</p></li>
+        <li class="team-member"><h3>Security Head</h3><p>Muneeb</p></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    Contact: <a href="mailto:muneebn350@gmail.com">muneebn350@gmail.com</a><br>
+    Portfolio: <a href="https://muneebdev.vercel.app" target="_blank" rel="noopener"><u>Visit my portfolio</u></a>
+  </footer>
+</body>
+</html>
